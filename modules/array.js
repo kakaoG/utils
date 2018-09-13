@@ -6,7 +6,7 @@ export default {
    * @param propertyArr 属性名数组  过滤出需要的数组对象数据 可不传
    * @returns [] 返回新数组
    */
-  uniqueArr(arr, propertyName, propertyArr) {
+  uniqueArray(arr, propertyName, propertyArr) {
     if(arr.length===0) return arr;
     if(typeof arr[0] !== 'object') {
       return Array.from(new Set(arr));
